@@ -20,7 +20,7 @@ Install your build tools
 Install Visual Studio Build Tools https://visualstudio.microsoft.com/de/downloads/?q=build+tools (at the bottom of the page)
 <br/>Open "x64 Native Tools Command Prompt for VS 2022" and navigate to repository
 <br/>Build all libraries once: `buildlibs.bat`
-<br/>Now there are 4 new files: `libSDL2main.lib`, `libSDL2.lib`, `glad.lib` and `SDL2.dll` (I don't understand how to build static SDL)
+<br/>Now there are 4 new files: `SDL2main.lib`, `SDL2.lib`, `glad.lib` and `SDL2.dll` (I don't understand how to build static SDL)
 <br/>Build project: `build.bat` (not sure about that warning either)
 <br/>Run project: `main.exe`
 
