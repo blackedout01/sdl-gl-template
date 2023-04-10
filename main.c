@@ -212,7 +212,7 @@ int main(void) {
     
     int WindowWidth = 192*6;
     int WindowHeight = 108*6;
-    SDL_Window *Window = SDL_CreateWindow("SDL Template", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WindowWidth, WindowHeight, 0);
+    SDL_Window *Window = SDL_CreateWindow("SDL Template", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WindowWidth, WindowHeight, SDL_WINDOW_OPENGL);
     if(Window == 0) {
         fprintf(stderr, "SDL_CreateWindow: %s\n", SDL_GetError());
         return -1;

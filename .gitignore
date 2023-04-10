@@ -2,3 +2,10 @@
 *.out
 *.out.dSYM/
 .DS_Store
+
+*.lib
+*.exe
+*.pdb
+main.obj
+*.ilk
+*.dll
