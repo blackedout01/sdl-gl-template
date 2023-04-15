@@ -25,4 +25,8 @@ Install Visual Studio Build Tools https://visualstudio.microsoft.com/de/download
 <br/>Run project: `main.exe`
 
 ## Build on Linux
-TBD
+Open terminal and navigate to repository
+<br/>Build all libraries once: `sh buildlibs.sh`
+<br/>Now there are 3 new files: `libSDL2main.a`, `libSDL2.a` and `glad.a`
+<br/>Build project: `sh build.sh`
+<br/>Run project: `./a.out`
