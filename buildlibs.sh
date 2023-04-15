@@ -1,8 +1,16 @@
 #!/bin/bash
 
+beginswith() { case $1 in "$2"*) true;; *) false;; esac; }
+
 # glad
 cd glad
-clang src/glad.c -c -g -Iinclude -I.
+
+if beginswith "$OSTYPE" darwin; then #macos
+	clang src/glad.c -c -g -Iinclude -I.
+else
+	cc src/glad.c -c -g -Iinclude -I.
+fi
+
 ar rc ../glad.a *.o
 rm *.o
 cd ..
