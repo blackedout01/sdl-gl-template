@@ -4,7 +4,12 @@
 <br/>`git submodule update --init`
 
 ## Update Submodules to newest commits
-`git submodule update --remote --merge`
+~~`git submodule update --remote --merge`~~
+<br/>It's best to not always update to latest commits, since these might not be stable.
+<br/>Instead, you can check out release commits of your library. In SDL (and other libraries probably) they are tagged. To check them out, run the following commands inside the submodule repository:
+<br/>`git tag`
+<br/>`git checkout <insert tag name here>`
+<br/>Finally your submodule changes can be added and committed in the base repository.
 
 ## Build on MacOS
 ### Clang
